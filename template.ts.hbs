@@ -11,7 +11,7 @@ LicenseManager.setLicenseKey(
 );
 
 // 判断目前是否处于登录状态
-if (isLogin('/p-purchase/v5/{{projectName}}', process.env.NODE_ENV === 'development')) {
+if (isLogin('/{{vueName}}/v5/{{projectName}}', process.env.NODE_ENV === 'development')) {
   createApp(App)
     .use(Ant)
     .use(xiezanUI)
